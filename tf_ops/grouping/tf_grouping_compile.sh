@@ -1,5 +1,5 @@
 #/bin/bash
-CUDA_PATH=/usr/local/cuda
+CUDA_PATH=/usr/local/cuda-9.0
 $CUDA_PATH/bin/nvcc tf_grouping_g.cu -o tf_grouping_g.cu.o -c -O2 -DGOOGLE_CUDA=1 -x cu -Xcompiler -fPIC
 
 # TF1.2
